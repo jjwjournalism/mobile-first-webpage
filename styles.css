@@ -1,73 +1,73 @@
 /* General styles */
 
-body{
-	font-family: sans-serif;
+body {
+  font-family: sans-serif;
 }
 
-h2,
-h3 {
-	font-weight: normal;
+h2, h3 {
+  font-weight: normal;
 }
 
-h1,
-h2,
-h3{
-	text-align: center;
+h1, h2, h3 {
+  text-align: center;
 }
 
-section{
-	 overflow: hidden;
+section {
+  overflow: hidden;
 }
 
-p{
-
-    /* Uses the margin trick to center */
-    margin:10px auto;
-
-    /*Sets a line height for the paragraphs*/
-    line-height: 1.4;
-
-    /* Styles for smaller screens */
-    max-width:100%;
-
+p {
+  /* Uses the margin trick to center */
+  margin: 10px auto;
+  /*Sets a line height for the paragraphs*/
+  line-height: 1.4;
+  /* Styles for smaller screens */
+  max-width: 100%;
 }
 
 /* Headline and byline styles */
 
-h1.headline{
-	margin-bottom: 0px;
+h1.headline {
+  margin-bottom: 0px;
 }
 
-h2.byline{
-	margin-top: 0px;
-	margin-bottom: 5px;
+h2.byline {
+  margin-top: 0px;
+  margin-bottom: 5px;
 }
 
 /* Banner image styles */
 
-img.bannerImage{
-	display: block;
-	margin: 0px auto;
-
-	/* Styles for smaller screens */
-	max-width: 100%;
-	height: auto;
-
+img.bannerImage {
+  display: block;
+  margin: 0px auto;
+  /* Styles for smaller screens */
+  max-width: 100%;
+  height: auto;
 }
-
 
 /* Character image styles */
 
-img.characterImage{
-
-	/* Styles for smaller screens */
-	width: 100%;
-	height: auto;
-
-	display: block;
-	margin: 10px auto;
-
-	
+img.characterImage {
+  /* Styles for smaller screens */
+  width: 100%;
+  height: auto;
+  display: block;
+  margin: 10px auto;
 }
 
+/* Styles for wider screens */
 
+@media screen and (min-width: 1000px) {
+  p {
+    max-width: 600px;
+  }
+  img.bannerImage {
+    width: 500px;
+  }
+  img.characterImage {
+    float: right;
+    width: 300px;
+    margin-right: 300px;
+  }
+}
