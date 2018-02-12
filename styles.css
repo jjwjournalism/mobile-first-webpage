@@ -56,14 +56,28 @@ img.characterImage {
   margin: 10px auto;
 }
 
-/* Styles for wider screens */
+/* Styles for tablets */
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-device-width: 600px) and (max-device-width: 1023px) {
+  p {
+    width: 75%;
+  }
+  img.bannerImage {
+    width: 600px;
+  }
+  img.characterImage {
+    width: 600px;
+  }
+}
+
+/* Styles for desktop screens */
+
+@media screen and (min-device-width: 1024px) {
   p {
     max-width: 600px;
   }
   img.bannerImage {
-    width: 500px;
+    width: 600px;
   }
   img.characterImage {
     float: right;
